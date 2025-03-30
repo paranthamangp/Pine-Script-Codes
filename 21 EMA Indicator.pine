@@ -1,0 +1,8 @@
+//@version=5
+indicator(title="21 EMA", shorttitle="21EMA", overlay=true)
+
+// Define the 21-period EMA
+ema21 = ta.ema(close, 21)
+
+// Plot the EMA
+plot(ema21, title="21 EMA", color=color.blue, linewidth=2)
